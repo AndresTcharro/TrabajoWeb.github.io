@@ -1,0 +1,501 @@
+/* Reset, para limpiar lo que los navegadores nos aplican por defecto */
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+
+}
+
+/* Header */
+
+header{
+
+    height: 120px;
+    width: 100%;
+    background: #3d4d5c;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    position: fixed; 
+    z-index: 100;
+
+}
+
+.logo{
+    height: 100px;
+    padding-left: 20px;
+}
+nav{
+    background: #3d4d5c;
+    height: 120px;
+    width: 100%;
+
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #3d6285;
+    transition: .5s;
+
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc891;
+}
+#check{
+    display: none;   
+}
+
+/* BANNER */
+
+
+
+
+#banner{
+    
+    padding: 0 50px;
+    background-image: url(./imagenes/banner.png);
+    height: 86vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+    z-index: 200;
+}
+
+
+
+.contenido-banner{
+   
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contenido-banner h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 0px;
+    
+}
+.contenido-banner h2 span{
+    font-weight: 800;
+}
+
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc891;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all .4s;
+}
+
+.boton-empezar:hover{
+    background: #6cc09070;
+
+}
+
+/* JUGADORES */
+
+#jugadores{
+    padding: 50px 50px; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#jugadores img{
+    border-radius: 100%;
+    
+}
+
+#jugadores div{
+    padding: 30px 30px;
+}
+
+#jugadores div h3{
+    color: #4d4d5c;
+    font-size: 3rem;
+    margin: 15px 0px;
+}
+
+#jugadores div p{
+    color: #4d4d5c87;
+    font-size: 2rem;
+}
+
+
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc891;
+    padding: 10px 30px;
+    border: 3px solid #6cc891;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all .4s;
+}
+
+.boton-saber-mas:hover{
+    background: #6cc891;
+    color: #fff;
+}
+
+/* Nosotros */
+
+.cabecera{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #2e406e;
+    margin-top: 100px;
+}
+.nosotros{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 1rem;
+    background:url(imagenes/SUSCRIBETE.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+}
+
+.nosotros h3{
+
+    color: white;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+}
+.nosotros p{
+    color: white;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    width: 70rem;
+}
+
+
+
+/* VIDEO */
+.video1{
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 50px;
+    height: 0;
+    /* para que la caja se ajuste al contenido */
+    overflow:hidden ; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-width: 0px;
+
+}
+
+.video1 iframe{
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+/* SUSCRIBETE */
+
+.cabecera{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: #2e406e;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    
+}
+
+.suscribete {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 1rem;
+    background:url(imagenes/SUSCRIBETE.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    
+}
+
+.suscribete p{
+    color: white;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    width: 70rem;
+}
+
+.suscribete form{
+    display: flex;
+    max-width: 70rem;
+    border: .2rem solid whitesmoke;
+    padding: .5rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    height: 5.5rem;
+   
+    
+    
+}
+
+.suscribete form input[type="email"]{
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    background: none;
+    width: 100%;
+    color: #4bae77 ;
+    text-transform: none;
+    border-radius: 5rem;
+}
+.suscribete form input[type="email"]::placeholder{
+    color: #4bae77;
+    text-transform: capitalize;
+
+}
+.suscribete form input[type="submit"]{
+    background: white;
+    width: 20rem;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    color: #4bae77;
+}
+
+.suscribete form input[type="submit"]:hover{
+    color: #3d4d5c;
+}
+
+/* COMEBNTARIOS */
+
+.cabecera{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: #2e406e;
+    margin-top: 100px;
+    margin-bottom: 100px;   
+}
+.opiniones .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+.opiniones .caja-contenedor .caja1{
+    
+
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+}
+
+.opiniones .caja-contenedor .caja1 .fa-atom{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 8rem;
+    color: #3d4d5c;
+    opacity: .3;
+
+
+}
+
+.opiniones .caja-contenedor .caja1 .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 2rem;
+
+}
+
+.opiniones .caja-contenedor .caja1 .user h3{
+    color: #2e406e;
+    font-size: 2rem;
+}
+
+.opiniones .caja-contenedor .caja1 .user .stars i{
+    color: #3d4d5c;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+
+.opiniones .caja-contenedor .caja1 .comentarios{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* SOCIAL MEDIA  */
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook{
+    background: #2e406e;
+}
+.icon-twitter{
+    background: #339dc5;
+}
+.icon-youtube{
+    background: #e83028;
+}
+.icon-instagram{
+    background: #3f60a5;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/* FOOTER */
+footer{
+    margin-top: 20px;
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: .8s;
+    }
+    .menu ul li a{
+        display: list-item;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked  ~ .menu{
+        right: 0;
+    }
+    /* JUGADORES */
+    #jugadores{
+        flex-direction: column;
+    }
+
+    .caja{
+        display: block;
+    }
+    .caja > div{
+        width: 90%;
+        padding: 10px;
+    }
+
+
+
+    /* FORMULARIO */
+    .datos-form{
+        flex-direction: column;
+    }
+    
+}
+

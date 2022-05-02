@@ -1,0 +1,346 @@
+/* Reset, para limpiar lo que los navegadores nos aplican por defecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+ }
+ 
+ /* Header */
+ 
+ header{
+ 
+     height: 120px;
+     width: 100%;
+     background: #3d4d5c;
+     padding: 0 50px;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;  
+     align-items: center;
+
+ 
+ }
+ .logo{
+     height: 100px;
+     padding-left: 20px;
+ }
+ nav{
+     background: #3d4d5c;
+     height: 120px;
+     width: 100%;
+ 
+ }
+ 
+ 
+ 
+ nav ul{
+     float: right;
+     margin-right: 10px;
+ }
+ nav ul li{
+     display: inline-block;
+     line-height: 120px;
+     margin: 0 10px;
+ }
+ 
+ nav ul li a{
+     color: #fff;
+     font-size: 20px;
+     padding: 6px 12px;
+     border-radius: 5px;
+     text-transform: uppercase;
+ }
+ li a.active, li a:hover{
+     background: #3d6285;
+     transition: .5s;
+ 
+ }
+ .mostrar-menu,
+ .esconder-menu{
+     font-size: 40px;
+     cursor: pointer;
+     display: none;
+     transition: .5s;
+ 
+ }
+ 
+ .mostrar-menu{
+     order: 1;
+ }
+ 
+ .menu a:hover,
+ .mostrar-menu:hover,
+ .esconder-menu:hover{
+     color: #6cc891;
+ }
+ #check{
+     display: none;   
+ }
+
+ /* FORMULARIO */
+ section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 3rem;
+    width: auto;
+    background-color: lightgrey;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #707070;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 1rem;
+    
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+
+    width: 14rem;
+    margin: 0.5rem 0;
+}
+
+.field label{
+    font-size: 0.9rem;
+
+    margin-bottom: 0.2rem;
+
+    color: #696969;
+
+}
+
+.field input{
+
+    font-size: 1.1rem;
+
+    width: 70%;
+    height: 2.2rem;
+    padding-left: 00.5rem;
+
+    border: 2px solid #696969;
+    border-radius: 5px;
+}
+.field select{
+
+    font-size: 1rem;
+    width: 12rem;
+    height: 2.6rem;
+    padding-left: 00.5rem;
+
+    border: 2px solid #696969;
+    border-radius: 5px;
+
+}
+.textbox{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 30rem;
+    margin: 0.75rem 0;
+
+}
+
+.textbox label{
+
+    font-size: 0.9rem;
+
+    margin-bottom: 00.2rem;
+
+    color: #696969;
+}
+
+textarea{
+
+    font-size: 1.1rem;
+
+    max-width: 100%;
+    height: 5rem;
+    max-height: 15rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+
+    border: 2px solid #696969;
+    border-radius: 5px;
+}
+.gustos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 20rem;
+    margin: 0.75rem 0;
+}
+
+.gustos label{
+    font-size: 00.9rem;
+    
+    margin-bottom: 0.2rem;
+
+    color: #696969;
+}
+
+.gustos div{
+
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 0.5rem;
+
+}
+.gustos div input{
+
+    width: 1rem;
+    height: 1rem;
+
+    cursor: pointer;
+}
+
+.privacidad{
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.submit{
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.submit button{
+    font-size: 1.3rem;
+
+    padding: 0.75rem 1.2rem;
+
+    border: 2px solid 1.3rem;
+    border-radius: 5px;
+}
+
+/* SOCIAL MEDIA  */
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook{
+    background: #2e406e;
+}
+.icon-twitter{
+    background: #339dc5;
+}
+.icon-youtube{
+    background: #e83028;
+}
+.icon-instagram{
+    background: #3f60a5;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+.validador{
+
+    align-items: center;
+}
+
+/* FOOTER */
+footer{
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
+@media(max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: .8s;
+    }
+    .menu ul li a{
+        display: list-item;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked  ~ .menu{
+        right: 0;
+    }
+    #formulario{
+        flex-direction: column;
+    }
+    #footer{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosPortada.css">
+    <link rel="stylesheet" href="CSS/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>NBA</title>
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- En la header tenemos el logo de nuestra pagina junto con el menu -->
+    <header>
+        <a href="Portada.html" class="enlace">
+            <img src="Imagenes/logo.png" alt="Logo de la NBA" class="logo">
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801;
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="jugadores.html" rel="noopener noreferrer">Jugadores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+            <label for="check" class="esconder-menu">
+                &#215;
+            </label>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- BANNER -->
+        <!-- En el banner localizamos Una h2 que nos sirve para descriri un poco, 
+            junto con un span en NBA , y un boton ·empezar que nos redirige al video que hay en la pagina -->
+
+        <section id="banner">
+            <div class="contenido-banner">
+                <h2><span>NBA:</span>TODO SOBRE LA NBA<br>DESCUBRE EL BALONCESTO</h2>
+                <a href="#video1" target="_blank" rel="noopener noreferrer"
+                    class="boton-empezar">Empezar</a>
+            </div>
+        </section>
+
+        <!-- JUGADORES -->
+        <!-- En esta "section tenemos dos "div" que contienen a los jugadores,
+            junto con un boton el cual nos redirige aun enlace externo a la 
+            Wikipedia de cada jugador en una página distinta a la que estamos
+            ya que tuilizamos "target=_blank" -->
+
+        <section id="jugadores">
+            <div>
+                <img src="./imagenes/michael.png" alt="Michael Jordan">
+                <h3>MICHAEL JORDAN</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, voluptatem!</p>
+                <a href="https://es.wikipedia.org/wiki/Michael_Jordan" target="_blank" rel="noopener noreferrer"
+                    class="boton-saber-mas">Saber Más</a>
+            </div>
+            <div>
+                <img src="./imagenes/lebron.png" alt="Lebron James">
+                <h3>LEBRON JAMES</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, voluptatem!</p>
+                <a href="https://es.wikipedia.org/wiki/LeBron_James" target="_blank" rel="noopener noreferrer"
+                    class="boton-saber-mas">Saber Más</a>
+            </div>
+
+        </section>
+
+
+
+        <section class="sobreNosotros" id="sobreNosotros">
+            <h2 class="cabecera">nosotros</h2>
+            <div class="nosotros">
+
+                <h3>QUIÉNES SOMOS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima facilis voluptates, iure
+                    magnam, necessitatibus qui nihil tempore rem quisquam blanditiis quis iste doloremque sed
+                    asperiores libero aut rerum numquam, doloribus eum. Eum laboriosam consequatur suscipit cum
+                    vero voluptatibus. Molestiae odit mollitia adipisci quod totam est cum magni voluptas eum
+                    maiores aperiam officiis dolorum ipsa, minus dignissimos saepe et distinctio suscipit
+                    voluptate delectus laborum deleniti itaque. Illo, earum, vitae a ipsum reprehenderit,
+                    veritatis dignissimos saepe repellat nam blanditiis in neque. Enim quos consequuntur odit
+                    impedit itaque totam consectetur quae sunt? In omnis quaerat aliquam laboriosam possimus.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- VIDEO -->
+        <!-- En este section ya que el video es de Youtube utilizamos la etiqueta iframe,
+            y "embed" para asegurarnos que tanto el video como el audio se reproduzcan 
+            en todos los navegadores y "?rel=0&autoplay=1" para que se reproduzca -->
+
+        <section>
+
+            <div class="video1" id="video1">
+                <h3>Street Ball</h3>
+                <iframe src="https://www.youtube.com/embed/0UKsPwpvpLk?rel=0&autoplay=1"
+                    allowfullscreen="allowfullscreen"></iframe>
+
+            </div>
+
+        </section>
+
+
+        <section class="suscribirse">
+            <h2 class="cabecera">suscribete para tener novedades </h2>
+            <div class="suscribete">
+
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, cupiditate, a labore beatae doloribus
+                    repellat quaerat debitis repudiandae nemo commodi, in velit sint quibusdam dolorem quo
+                    necessitatibus.
+                    Suscipit voluptas officiis consectetur sit est voluptatibus repellendus accusantium animi, pariatur
+                    tempora voluptatum! Velit a maiores aut dolore incidunt? Aliquam architecto quisquam sit quaerat,
+                    similique quo quia molestiae ducimus excepturi placeat quam reiciendis inventore dignissimos non
+                    ipsa
+                    aut! Harum optio ipsum earum, officiis facere nisi illo atque, voluptas ullam architecto accusamus
+                    quidem ab ex dolores eum! Similique ullam quaerat, quia, quos necessitatibus perspiciatis illum
+                </P>
+                <form action="form">
+                    <input type="email" placeholder="ingresa tu email">
+                    <input type="submit" value="suscribete">
+                </form>
+
+            </div>
+        </section>
+
+        <section class="opiniones" id="opiniones">
+
+            <h2 class="cabecera">opiniones de suscriptores</h2>
+            <div class="caja-contenedor">
+                <div class="caja1">
+                    <!-- Icono que utilizamos en forma de Átomo -->
+                    <i class="fas fa-atom"></i>
+                    <div class="user">
+                        <img src="imagenes/pedro.png" alt="Usuario 1">
+                        <h3>Pedro</h3>
+                        <div class="star">
+                            <!-- Estrellas para la calificación de opiniones  -->
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comentarios">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum autem nam delectus
+                                aliquam itaque, aut ad eius, facere qui tempore reprehenderit. Enim modi fugit libero,
+                                iure
+                                dolorem quam corporis?</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="caja1">
+                    <i class="fas fa-atom"></i>
+                    <div class="user">
+                        <img src="imagenes/maria.png" alt="Usuario 1">
+                        <h3>Maria</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comentarios">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum autem nam delectus
+                                aliquam itaque, aut ad eius, facere qui tempore reprehenderit. Enim modi fugit libero,
+                                iure
+                                dolorem quam corporis?</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="caja1">
+                    <i class="fas fa-atom"></i>
+                    <div class="user">
+                        <img src="imagenes/david.png" alt="Usuario 1">
+                        <h3>David</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comentarios">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum autem nam delectus
+                                aliquam itaque, aut ad eius, facere qui tempore reprehenderit. Enim modi fugit libero,
+                                iure
+                                dolorem quam corporis? </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <div class="social-bar">
+            <a href="https://es-es.facebook.com/nba" class="icon icon-facebook" target="_blank"> </a>
+            <a href="https://twitter.com/NBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.youtube.com/nba" class="icon icon-youtube" target="_blank"></a>
+            <a href="https://www.instagram.com/nba/" class="icon icon-instagram" target="_blank"></a>
+        </div>
+    </main>
+    <footer>
+        <P>&copy;2022 By Ramiro Andres Tupiza Charro</P>
+    </footer>
+</body>
+
+</html>

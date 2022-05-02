@@ -1,0 +1,242 @@
+/* https://www.youtube.com/watch?v=9w3gy2dYN_E */
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+ }
+
+ /* HEADER */
+
+header{
+
+    height: 120px;
+    width: 100%;
+    background: #3d4d5c;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+
+}
+.logo{
+    height: 100px;
+    padding-left: 20px;
+}
+nav{
+    background: #3d4d5c;
+    height: 120px;
+    width: 100%;
+
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #3d6285;
+    transition: .5s;
+
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc891;
+}
+#check{
+    display: none;   
+}
+
+
+/* contenedor */
+
+.contenedor{
+    
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px auto;
+    margin-bottom: 0%;
+    display: grid;
+    grid-gap: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    
+}
+.contenedor > div,
+.contenedor .contenido,
+.contenedor {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+/* main */
+.contenedor .contenido{
+    grid-column: span 2;
+}
+
+/* sidebar */
+.contenedor .sidebar{
+    padding: 20px;
+    border-radius: 4px;
+    grid-column: 3 / 4 ;
+    background-image: url(./imagenes/banner.png);
+    image-rendering: auto;
+    text-align: center;
+    display: flex;
+   justify-content: center;
+    min-height: 100px;
+   grid-row: 1 / 3;
+
+}
+
+.contenedor .jugador2,
+.contenedor .jugador3{
+    background: #3d6285;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* SOCIAL MEDIA  */
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook{
+    background: #2e406e;
+}
+.icon-twitter{
+    background: #339dc5;
+}
+.icon-youtube{
+    background: #e83028;
+}
+.icon-instagram{
+    background: #3f60a5;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/* FOOTER */
+footer{
+    background: #4d4d5c;
+    color: #cccccc4a;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    
+   
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+    .contenedor .sidebar{
+        grid-column: 1 / -1;
+    }
+    .contenedor .jugador2{
+        grid-column: span 2;
+    }
+
+}
+
+@media(max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: .8s;
+    }
+    .menu ul li a{
+        display: list-item;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked  ~ .menu{
+        right: 0;
+    }
+    
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosPagina2.css">
+    <link rel="stylesheet" href="CSS/font.css">
+
+    <title>NBA</title>
+
+
+</head>
+
+<body>
+    <header>
+        <a href="Portada.html" class="enlace">
+            <img src="Imagenes/logo.png" alt="Logo de la NBA" class="logo">
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801;
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="Portada.html">Inicio</a></li>
+                <li><a href="jugadores.html" rel="noopener noreferrer">Jugadores</a></li>
+                <li><a class="active" href="#">Contacto</a></li>
+
+            </ul>
+            <label for="check" class="esconder-menu">
+                &#215;
+            </label>
+        </nav>
+    </header>
+    <section>
+        <h1>Formulario de registro</h1>
+        <form>
+            <div class="field">
+                <label>Nombre</label>
+                <input type="text" name="Nombre" required placeholder="nombre" autocomplete="name">
+            </div>
+            <div class="field">
+                <label>Apellidos</label>
+                <input type="text" name="Apellidos" required placeholder="apellidos" autocomplete="family-name">
+            </div>
+            <div class="field">
+                <label>Equipo favorito</label>
+
+                <select>
+                    <option selected disabled>Seleccione equipo </option>
+                    <option>Chicago Bulls</option>
+                    <option>Lakers</option>
+                    <option>Boston</option>
+                    <option>Miami Heat</option>
+                    <option>Cleveland</option>
+                    <option>Warriors</option>
+                    <option>Raptors</option>
+                    <option>Knicks</option>
+                    <option>Nets</option>
+                    <option>Grizzlies</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" required placeholder="email" autocomplete="email">
+            </div>
+            <div class="field">
+                <label>Contraseña</label>
+                <input type="password" name="Contraseña" required placeholder="contraseña">
+            </div>
+            <div class="field">
+                <label>Teléfono</label>
+                <input type="number" name="Teléfono" required placeholder="teléfono" autocomplete="mobile">
+            </div>
+            <div class="textbox">
+                <label>Otros datos</label>
+                <textarea></textarea>
+            </div>
+            <div class="gustos">
+                <div><label>Quieres recibir información relacionados con tus gustos</label></div>
+                <div><input type="radio" name="gustos" required>SI</div>
+                <div><input type="radio" name="gustos" required>NO</div>
+
+            </div>
+            <div class="privacidad">
+                <input type="checkbox" required>
+                <label>He leido y acepto la política de privacidad</label>
+            </div>
+            <div class="submit">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </section>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="¡CSS Válido!" />
+        </a>
+    </p>
+
+    <div class="social-bar">
+        <a href="https://es-es.facebook.com/nba" class="icon icon-facebook" target="_blank"> </a>
+        <a href="https://twitter.com/NBA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com/nba" class="icon icon-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/nba/" class="icon icon-instagram" target="_blank"></a>
+    </div>
+    <div class="validador">
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="¡CSS Válido!" />
+            </a>
+        </p>
+    </div>
+    <footer>
+        <P>&copy;2022 By Ramiro Andres Tupiza Charro</P>
+    </footer>
+</body>
+
+</html>
